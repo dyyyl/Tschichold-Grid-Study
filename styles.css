@@ -108,9 +108,26 @@ strong {
   column-gap: 20px;
 }
 
+@media (max-width: 500px) {
+  .about {
+    width: 70%;
+  }
+}
+
 .title {
   align-self: flex-start;
   justify-self: center;
   font-size: 1.5rem;
   margin-top: 15rem;
+}
+
+@media (max-width: 500px) {
+  .text {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1rem;
+    margin-top: 10rem;
+  }
 }
