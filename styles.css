@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f0e5;
+  font-size: 62.5%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: "Varela Round", sans-serif;
+}
+
+main {
+  width: 1024px;
+  height: 1450px;
+  display: grid;
+  grid-template-columns: repeat(29, 32px);
+  grid-template-rows: repeat(10, 145px);
+  column-gap: 3px;
+  overflow-x: hidden;
+}
+
+strong {
+  font-size: 2.25rem;
+}
+
+.box {
+  background-color: #f6a61d;
+}
+
+.first {
+  grid-column: 1 / 16;
+  grid-row: 1 / 6;
+  display: flex;
+  align-items: flex-end;
+}
+
+.second {
+  grid-column: 16 / 23;
+  grid-row: 3 / 9;
+}
+
+.third {
+  grid-column: 23 / 27;
+  grid-row: 6 / -1;
+}
+
+.fourth {
+  grid-column: 27 / 29;
+  grid-row: 2 / 8;
+}
+
+.fifth {
+  grid-column: 29 / 30;
+  grid-row: 1 / 6;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: repeat(7, 2.25rem);
+  column-gap: 20px;
+  row-gap: 5px;
+  margin-bottom: 10rem;
+}
+
+@media (max-width: 525px) {
+  .first {
+    justify-content: flex-end;
+  }
+  .container {
+    width: 90%;
+    margin-right: 5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .first {
+    justify-content: center;
+  }
+
+  .container {
+    width: 50%;
+    grid-template-columns: 20% 80%;
+    margin-right: 10rem;
+  }
+}
+
+.text {
+  font-size: 1.25rem;
+}
+
+.text__inner {
+  display: flex;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.about {
+  grid-column: 1 / 16;
+  grid-row: 6 / -1;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  column-gap: 20px;
+}
+
+.title {
+  align-self: flex-start;
+  justify-self: center;
+  font-size: 1.5rem;
+  margin-top: 15rem;
+}
