@@ -111,6 +111,7 @@ strong {
 @media (max-width: 500px) {
   .about {
     width: 70%;
+    margin-left: 1.25rem;
   }
 }
 
